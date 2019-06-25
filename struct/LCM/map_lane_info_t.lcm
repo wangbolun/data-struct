@@ -1,0 +1,21 @@
+package lcmtypes;
+
+struct map_lane_info_t
+{
+	int8_t index;								//车道的ID
+        int8_t property;					//0直行
+//1直行左转
+//2左转
+//3右转
+//4直行右转
+//5调头
+//6直行调头
+//7左转调头
+//8左转或右转
+//9各个方向
+
+
+	float width;      								//车道宽度
+	int16_t	pointCount;         						//车道中心线点数量
+        lcmtypes.map_point_t points[pointCount];				//中心线点的经纬度等信息
+}

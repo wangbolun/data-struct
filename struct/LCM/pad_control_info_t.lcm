@@ -1,0 +1,13 @@
+package lcmtypes;
+struct pad_control_info_t
+{
+	byte esr_onoff;     //ESR开关
+	byte lux40_onoff;   //激光雷达开关
+	byte gps_onoff;  //GPS开关
+	byte speed_updown;   //调速
+	byte lane_change;  //换道
+	byte drive_mode;   //驾驶模式
+	byte work_onoff;   //作业开关
+	byte cancel;   //退出路线
+	byte follow_past;   //跟车超车
+}

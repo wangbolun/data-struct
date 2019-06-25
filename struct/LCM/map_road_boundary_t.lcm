@@ -1,0 +1,16 @@
+package lcmtypes;
+
+struct map_road_boundary_t
+{
+	int16_t	pointCount;         						//车道中心线点数量
+        lcmtypes.map_point_t points[pointCount];				//中心线点的经纬度等信息
+	float  height;					//高度
+	int8_t property;				//属性0:障碍
+                                                        //1：树
+                                                        //2：人行道
+                                                        //3：隔离带
+                                                        //4：交通标志牌子限速
+                                                        //5：红绿灯
+                                                        //6：分隔栏
+
+}
